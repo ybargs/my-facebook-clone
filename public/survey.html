@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Survey</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="survey.css">
+
+</head>
+<body>
+  <div class="content survey-content">
+    <h1>User Survey</h1>
+    <p id="welcome-msg"></p>
+
+    <form id="surveyForm">
+
+  <!-- Data privacy checklist at the top -->
+  <fieldset>
+    <label>
+    <legend>Data Privacy Consent</legend>
+      <input type="checkbox" name="consent" required>
+         <text>I agree to the collection and processing of my survey data.</text>
+    </label>
+  </fieldset>
+
+
+
+    <form id="surveyForm">
+      <label>
+        How often do you use social media?
+        <select name="frequency" required>
+          <option value="">Select</option>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="rarely">Rarely</option>
+        </select>
+      </label>
+
+      <label>
+        What is your favorite feature on Facebook?
+        <input type="text" name="feature" placeholder="Type here..." required>
+      </label>
+
+      <label>
+        Any suggestions for us?
+        <textarea name="suggestions" placeholder="Your feedback..."></textarea>
+      </label>
+
+
+      <button type="submit">Submit Survey</button>
+    </form>
+
+    <button id="logoutBtn">Log Out</button>
+  </div>
+
+   <footer class="footer">
+    <div class="languages">
+      <a href="#">English (US)</a>
+      <a href="#">Filipino</a>
+      <a href="#">Bisaya</a>
+      <a href="#">Español</a>
+      <a href="#">日本語</a>
+      <a href="#">한국어</a>
+      <a href="#">中文(简体)</a>
+      <a href="#">العربية</a>
+      <a href="#">Português (Brasil)</a>
+      <a href="#">Français (France)</a>
+      <a href="#">Deutsch</a>
+    </div>
+
+    <div class="links">
+      <a href="#">Sign Up</a>
+      <a href="#">Log In</a>
+      <a href="#">Messenger</a>
+      <a href="#">Facebook Lite</a>
+      <a href="#">Video</a>
+      <a href="#">Meta Pay</a>
+      <a href="#">Meta Store</a>
+      <a href="#">Meta Quest</a>
+      <a href="#">Ray-Ban Meta</a>
+      <a href="#">Meta AI</a>
+      <a href="#">Instagram</a>
+      <a href="#">Threads</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookies</a>
+      <a href="#">Ad choices</a>
+      <a href="#">Terms</a>
+      <a href="#">Help</a>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Developers</a>
+      <a href="#">Create Page</a>
+    </div>
+
+    <div class="meta">
+      Meta © 2025
+    </div>
+  </footer>
+
+
+  <script src="survey.js"></script>
+</body>
+</html>

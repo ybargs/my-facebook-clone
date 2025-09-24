@@ -1,0 +1,152 @@
+/* --- Page Setup --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Content Styling (Login + Survey) --- */
+.content {
+  text-align: center;
+  margin-top: 50px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  min-height: auto; 
+}
+
+/* Adjust survey box position */
+.survey-content {
+  margin-top: 80px;   /* moves the box slightly from the top */
+  margin-bottom: 40px; /* adds space from footer */
+}
+
+/* --- Survey Headings --- */
+.content h1 {
+  font-size: 35px;
+  color: #1877f2;
+  margin-bottom: 15px;
+  font-weight: bold;
+letter-spacing: -1px;
+  display: inline;
+}
+
+/* Personalized welcome message */
+#welcome-msg {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* --- Form Inputs --- */
+form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+form textarea {
+  min-height: 80px;
+}
+
+/* --- Data Privacy Box Styling --- */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 13px;
+  max-width: 500px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+  font-size: 14px;
+  color: #444;
+  }
+
+  text {
+margin-left: 10px;
+  display:flexbox;
+  font-size: 14px;
+  color: #444;
+  }
+
+input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #1877f2;       /* Facebook blue accent */
+  margin-left: 5px;
+  display: flexbox;
+}
+
+/* --- Buttons --- */
+form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+form button[type="submit"]:hover {
+  background: #165ed3;
+}
+
+#logoutBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f5f6f7;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#logoutBtn:hover {
+  background: #e4e6e9;
+  border-color: #aaa;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .content {
+    width: 90%;
+    padding: 20px;
+  }
+}

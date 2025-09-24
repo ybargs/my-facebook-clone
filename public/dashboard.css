@@ -1,0 +1,94 @@
+/* --- Page Setup --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* full height */
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ensures footer stays at bottom */
+}
+
+/* --- Dashboard Content --- */
+.dashboard-content {
+  max-width: 600px;
+  margin: 50px auto 0 auto;  /* top 50px, bottom auto pushes footer down */
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+  max-height: 40vh;        /* prevents box from stretching too much */
+  overflow-y: auto;        /* scroll if content exceeds box */
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  color: #1877f2;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.dashboard-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* --- Dashboard Box --- */
+.dashboard-box {
+  background: #f0f2f5;
+  border-radius: 8px;
+  padding-left: 20px;
+   padding-right: 20px;
+   padding-top:20px;
+   padding-bottom:5px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+/* --- Data Privacy Text --- */
+.data-privacy {
+  color: #656769;
+  line-height: 1.5;   /* better readability */
+  font-size: 14px;
+  text-align: center;   /* aligns text to left */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* --- Logout Button --- */
+#logoutBtn {
+  padding: 12px 24px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#logoutBtn:hover {
+  background: #165ed3;
+}
+
+/* --- Footer --- */
+.footer {
+  padding: 20px;
+  font-size: 12px;
+  color: #737373;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: auto;  /* pushes footer to bottom if content is short */
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .dashboard-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
